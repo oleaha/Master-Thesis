@@ -1,0 +1,44 @@
+\chapter{Background}
+\label{chp:Background} 
+
+This chapter explores the area of Intelligent Transportation Systems, its surrounding technologies and the concept of a testbed. Starting with an overview of fundamental concepts in ITS.
+
+\section{Intelligent Transportation System}\label{sec:its}
+
+\blockquote[\cite{eu-10-2010}]{
+Intelligent Transport Systems or ITS means systems in which information and communication technologies are applied in the field of road transport, including infrastructure, vehicles and users, and in traffic management ad mobility management, as well as for interfaces with other modes of transport.}
+
+\gls{its} are advanced applications that aims to provide innovative services relating to different modes of transport and traffic management. An \gls{its} service is the provisioning of an \gls{its} application through a well-defined framework with the aim of contributing to user safety, efficiency and comfort. \gls{its} is a part of \gls{iot} that includes \gls{v2v} and \gls{v2i} communication. While the \gls{its} branch i broad this project will mainly focus on the sub-branch Traffic Optimization, which are methods where time stopped in road traffic is reduced. 
+
+\todo[inline]{Go further into EU directives? Penetration of ITS?}
+
+\section{Vehicle-to-Vehicle Communication}\label{sec:v2v}
+\gls{v2v} is the ad-hoc networking paradigm and is a vital part of \gls{its}. Vehicular communication systems are networks in which vehicles and roadside units are the communicating nodes, exchanging information with each other such as safety warning, traffic information and location beacons. \gls{v2v} allows car to communicate over the 5.9GHz \gls{dsrc} band. \todo{Quite thin. Maybe more relevant under VANET section?}
+
+%https://www.car-2-car.org/index.php?eID=tx_nawsecuredl&u=0&g=0&t=1518709671&hash=16c41f36747ec4323ca106e60898858277a25dd7&file=fileadmin/downloads/PDFs/MoU_on_deployment-v40001.02_final.pdf
+In 2010 a \gls{mou} was signed between the CAR 2 CAR Communication Consortium and multiple car manufactures including Audi, Toyota, BMW, Volvo and Volkswagen among others. The outline of the \gls{mou} is that all car manufactures should commit them self to implement \gls{v2v} in all new cars by 2015. 
+
+\todo[inline]{Include a drawing of V2V communication}
+
+\subsection{Vehicular ad hoc networks}\label{sec:vanet}
+Vehicular ad hoc networks (VANETs) uses the principles of mobile ad hoc networks, which is the creation of a wireless network for data exchange, applying this principle to the domain of vehicles. VANETs are a key part of the \gls{its} framework and is used to achieve \gls{v2v} communication and also vehicle-to-infrastructure communication. VANETs can use any wireless networking technology as their basis, such as WLAN, LTE or DSRC. 
+
+\section{Testbed}\label{sec:testbed}
+A testbed is a platform for conducting rigorous, transparent and replicable testing of scientific theories, computational tools and new technologies. The term is uses across many disciplines to describe experimental research and new product development platforms and environments. 
+
+\section{Current solutions}
+A number of solutions for testing \gls{its} exists and can roughly be divided into two areas: computer simulation and physical tests involving one or more vehicles. Each area with their own pros and cons. 
+
+\subsection{Computer simulations}\label{subsec:computer-simulation}
+Computer simulations consists of simulating the environment and different scenarios with software on a computer. Programs such as SUMO and DIVERT is a good starting point for early prototyping and proof of concept for an ITS application. The main drawbacks by simulating on a computer is that it lacks the representation of real world scenarios and variability. Software have a tendency to be too artificial and often gives too optimistic results. But serves as a good baseline for future testing. 
+
+\subsection{Physical testing}\label{subsec:physical-testing}
+Physical testing involves testing on real cars in the real world. This type of tests are the best way to test new ITS applications but have some limitations. One major limitation of tests involving vehicles is that outdoor testing can give high costs in terms of logistics and scheduling. Tests have to be performed at a closed location which means that all parties involved need to be transported to the location in order to get started. Another drawback is weather conditions which might not be favorable for the test. As opposed to computer simulation - which are god for initial tests - physical testing is needed when the application is finished with its research stage and moved on to commercialization.
+
+\subsection{Hybrid solution}\label{sec:hybrid-solution}
+In this thesis i will try to create a hybrid solution for testing ITS applications. If we can take the best from computer simulation and physical testing, merge those together and create a low-cost, flexible supplement for outdoor testing. 
+
+\subsection{Virtual Traffic Light Testbed}\label{subsec:vtl-testbed}
+\todo[inline]{What Anders did}
+
+

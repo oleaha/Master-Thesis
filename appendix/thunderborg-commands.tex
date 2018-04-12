@@ -1,0 +1,16 @@
+\begin{itemize}
+\item \textbf{RawWrite()} Sends a raw command on the I2C bus to the ThunderBorg 
+\item \textbf{RawRead()} Reads back from the ThunderBorg after sending a GET command
+\item \textbf{InitBusOnly()} Prepare the I2C driver for talking to a ThunderBorg on the specified bus and I2C address.
+\item \textbf{Init()} Prepare the I2C driver for talking to the ThunderBorg
+\item \textbf{SetMotor2()} Sets the drive level for motor 2, from +1 to -1
+\item \textbf{GetMotor2()} Gets the drive level for motor 2, from +1 to -1
+\item \textbf{SetMotor1()} Sets the drive level for motor 1, from +1 to -1
+\item \textbf{GetMotor1()} Gets the drive level for motor 2, from +1 to -1
+\item \textbf{SetMotors()} Sets all motors to stopped, useful when ending a program
+\item \textbf{SetCommsFailsafe()} Sets the system to enable of disable the communication failsafe. The failsafe will turn the motors off unless it is commanded at least once every 1/4 of a second.
+\item \textbf{GetCommsFailsafe()} Read the current system state of the communications failsafe. 
+\item \textbf{GetDriveFault1()} Reads the motor drive fault state for motor \#1. Faults may indicate power problems, such as under-voltage and may be cleared by setting a lower drive power. 
+\item \textbf{GetDriveFault2()} Reads the motor drive fault state for motor \#2. Faults may indicate power problems, such as under-voltage and may be cleared by setting a lower drive power. 
+
+\end{itemize}
